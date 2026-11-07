@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sai Prasath D P — Portfolio.xlsx</title>
+<meta name="description" content="Sai Prasath D P — B.Com graduate and aspiring data analyst in Bengaluru. Financial models, Power BI dashboards and reporting, presented as a living spreadsheet." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+#site-loader{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;background:#f7f8f5;color:#1f3028;font:600 18px system-ui;text-align:center;padding:24px;transition:opacity .3s ease}
+#site-loader .spinner{width:42px;height:42px;border:4px solid #d4e2d7;border-top-color:#217346;border-radius:50%;animation:loader-spin .8s linear infinite}
+#site-loader.done{opacity:0;pointer-events:none}@keyframes loader-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#site-loader .spinner{animation:none}}
+</style>
+</head>
+<body>
+<div id="site-loader" role="status"><span class="spinner" aria-hidden="true"></span><span>For the best experience, please view this website on a desktop or laptop.</span></div>
+<script>window.addEventListener('load',function(){setTimeout(function(){var loader=document.getElementById('site-loader');loader.classList.add('done');setTimeout(function(){loader.remove()},350)},2000)});</script>
+<noscript><style>#site-loader{display:none}</style></noscript>
+
+<!-- ============ STICKY APP CHROME ============ -->
+<header class="chrome">
+  <!-- Excel title bar -->
+  <div class="titlebar excel-only">
+    <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="doc">
+      <span class="doc-icon" aria-hidden="true">✕</span>
+      <span class="doc-name">Sai_Prasath_Portfolio.xlsx</span>
+      <span class="doc-save">AutoSave <b>On</b></span>
+    </div>
+    <div class="win-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+
+  <!-- Power BI title bar -->
+  <div class="titlebar titlebar--pbi pbi-only">
+    <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="doc">
+      <span class="pbi-winlogo" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="doc-name">Sai_Prasath_Reports.pbix</span>
+      <span class="doc-save">Saved</span>
+      <span class="pbi-app">Power BI Desktop</span>
+    </div>
+    <div class="win-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+
+  <nav class="menubar excel-only" aria-label="Menu (decorative)">
+    <span>File</span><span>Edit</span><span>View</span><span>Insert</span>
+    <span>Format</span><span>Data</span><span>Review</span><span>Help</span>
+  </nav>
+
+  <nav class="menubar menubar--pbi pbi-only" aria-label="Menu (decorative)">
+    <span>File</span><span>Home</span><span>View</span><span>Help</span><span>External Tools</span>
+  </nav>
+
+  <!-- Excel ribbon -->
+  <div class="ribbon excel-only">
+    <div class="rtabs" aria-hidden="true">
+      <span class="on">Home</span><span>Insert</span><span>Draw</span><span>Page Layout</span>
+      <span>Formulas</span><span>Data</span><span>Review</span><span>View</span><span>Automate</span>
+    </div>
+    <div class="rtools" aria-hidden="true">
+      <div class="rgroup">
+        <div class="rbtns"><span>📋</span><span>✂</span><span>⧉</span></div>
+        <label>Clipboard</label>
+      </div>
+      <div class="rgroup">
+        <div class="rbtns"><span class="fontsel">Calibri</span><span>11</span><span><b>B</b></span><span><i>I</i></span><span><u>U</u></span></div>
+        <label>Font</label>
+      </div>
+      <div class="rgroup">
+        <div class="rbtns"><span>≡</span><span>⋮</span><span>⇥</span><span>↔</span></div>
+        <label>Alignment</label>
+      </div>
+      <div class="rgroup">
+        <div class="rbtns"><span>₹</span><span>%</span><span>,</span><span>.00</span></div>
+        <label>Number</label>
+      </div>
+      <div class="rgroup rgroup--grow">
+        <div class="rbtns"><span>Conditional</span><span>Format as Table</span><span>∑ AutoSum</span></div>
+        <label>Styles &amp; Editing</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Power BI ribbon -->
+  <div class="ribbon ribbon--pbi pbi-only">
+    <div class="rtabs" aria-hidden="true">
+      <span class="on">Home</span><span>Insert</span><span>Modeling</span><span>Data</span>
+      <span>View</span><span>Help</span><span>External Tools</span>
+    </div>
+    <div class="rtools" aria-hidden="true">
+      <div class="rgroup">
+        <div class="rbtns"><span>Get data</span><span>Excel workbook</span><span>SQL Server</span></div>
+        <label>Data</label>
+      </div>
+      <div class="rgroup">
+        <div class="rbtns"><span>Transform data</span><span>Refresh</span></div>
+        <label>Queries</label>
+      </div>
+      <div class="rgroup">
+        <div class="rbtns"><span>New measure</span><span>New column</span><span>New table</span><span>Quick measure</span></div>
+        <label>Calculations</label>
+      </div>
+      <div class="rgroup">
+        <div class="rbtns"><span>Manage relationships</span><span>Manage roles</span></div>
+        <label>Relationships &amp; Security</label>
+      </div>
+      <div class="rgroup rgroup--grow">
+        <div class="rbtns"><span>New visual</span><span>Text box</span><span>Shapes</span><span>Buttons</span></div>
+        <label>Insert</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="formulabar">
+    <div class="namebox" id="namebox">B2</div>
+    <div class="fx" aria-hidden="true"><span class="excel-only">fx</span><span class="pbi-only">DAX</span></div>
+    <div class="formula" id="formula"><span id="formulaText"></span><i class="caret" aria-hidden="true"></i></div>
+  </div>
+
+  <div class="colhead" id="colhead" aria-hidden="true"></div>
+</header>
+
+<!-- ============ WORKSHEET ============ -->
+<div class="sheetwrap">
+  <div class="gutter" id="gutter" aria-hidden="true"></div>
+
+  <main class="sheet" id="sheet">
+
+    <!-- ========== ABOUT ========== -->
+    <section class="block block--hero" id="about" data-sheet="about" data-cell="B2" data-formula='=CONCAT("Hello, I''m ",B2," — B.Com graduate & aspiring data analyst")'>
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="cell-tag">B2</div>
+          <h1 class="display">
+            <span class="type-line" data-type="Sai Prasath D P"></span><span class="cell-caret" aria-hidden="true"></span>
+          </h1>
+          <p class="hero-sub">B.Com graduate &amp; aspiring data analyst · Bengaluru, India</p>
+          <p class="hero-copy">A commerce graduate who likes making financial statements explain themselves. I build Excel models and Power BI reports, and I'm looking for my first role in reporting, analytics or finance.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#work" data-jump="work">See the work</a>
+            <a class="btn" href="/downloads/Sai_Prasath_DP_Resume_Professional.pdf">Résumé ↓</a>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="minitable" aria-hidden="true">
+            <div class="mt-head"><span>A</span><span>B</span><span>C</span></div>
+            <div class="mt-row"><span class="mt-k">CGPA</span><span class="mt-v"><b class="num" data-count="9.05" data-dec="2">0.00</b></span><span class="mt-trend up">▲</span></div>
+            <div class="mt-row"><span class="mt-k">Completed</span><span class="mt-v"><b class="num" data-count="2026" data-dec="0">0</b></span><span class="mt-trend">—</span></div>
+            <div class="mt-row"><span class="mt-k">Projects</span><span class="mt-v"><b class="num" data-count="2" data-dec="0">0</b></span><span class="mt-trend up">▲</span></div>
+            <div class="mt-row"><span class="mt-k">Certs</span><span class="mt-v"><b class="num" data-count="15" data-dec="0">0</b></span><span class="mt-trend up">▲</span></div>
+            <div class="mt-row mt-row--total"><span class="mt-k">Status</span><span class="mt-v mt-status">Open to work</span><span class="mt-trend up">●</span></div>
+          </div>
+          <p class="hero-note"><span class="spark" aria-hidden="true"><svg viewBox="0 0 120 28" preserveAspectRatio="none"><path class="sparkline" d="" /></svg></span> Excel · Power BI · SQL (learning)</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Bio + facts -->
+    <section class="block block--bio" data-sheet="about" data-cell="B6" data-formula='=A6'>
+      <div class="bio-grid">
+        <div class="bio-copy">
+          <h2 class="h2">I like a total that can explain itself.</h2>
+          <p>I'm Sai, a commerce graduate in Bengaluru. I build models to test what I think, and reports to help someone else decide.</p>
+          <p>I got into Excel the way most commerce students do: a deadline, a messy dataset, and no intention of doing it by hand. Then it became the part I actually enjoy — reading a P&amp;L, finding the assumption that holds the whole thing together, and building a model where every number traces back to a source.</p>
+          <p>I finished my B.Com in 2026 with a 9.05 CGPA. I'm looking for an entry-level role in business reporting, analytics, finance analytics or MIS, where I can learn from a team and keep getting better at this.</p>
+          <p class="muted">Away from the spreadsheet: reading about markets, practising SQL, and explaining why the total didn't match.</p>
+          <a class="link" href="/downloads/Sai_Prasath_DP_Resume_Professional.pdf">Read my résumé →</a>
+        </div>
+
+        <div class="facts" role="table" aria-label="Quick facts">
+          <div class="fact" role="row"><span class="fact-k">Based in</span><span class="fact-v">Bengaluru, India · open to remote</span></div>
+          <div class="fact" role="row"><span class="fact-k">Degree</span><span class="fact-v">B.Com · Bengaluru City University</span></div>
+          <div class="fact" role="row"><span class="fact-k">Graduated</span><span class="fact-v">2026 · CGPA 9.05 / 10</span></div>
+          <div class="fact" role="row"><span class="fact-k">Languages</span><span class="fact-v">English, Tamil, Kannada, Hindi</span></div>
+          <div class="fact" role="row"><span class="fact-k">Currently</span><span class="fact-v">Learning SQL and Python</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I work -->
+    <section class="block block--work habits" data-sheet="about" data-cell="B14" data-formula='=SEQUENCE(3)'>
+      <h2 class="h2">How I work</h2>
+      <p class="lead">Three habits I picked up from building the TCS model.</p>
+      <div class="habit-grid">
+        <article class="habit">
+          <span class="habit-no">1</span>
+          <h3>Read the statement first.</h3>
+          <p>Start with the P&amp;L and the notes, not the chart. The story is in the detail.</p>
+        </article>
+        <article class="habit">
+          <span class="habit-no">2</span>
+          <h3>Make the assumption visible.</h3>
+          <p>Every driver should be editable. If I can't change it, I can't test it.</p>
+        </article>
+        <article class="habit">
+          <span class="habit-no">3</span>
+          <h3>Check the total.</h3>
+          <p>A model is only as good as its checks. Then design the view that answers the question.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== WORK ========== -->
+    <section class="block block--work" id="work" data-sheet="work" data-cell="B20" data-formula='=COUNTIF(Projects[Status],"Finished")'>
+      <div class="section-head">
+        <h2 class="h2">Two models I finished.</h2>
+        <p class="lead">Both start with a TCS annual report and end with a number I can defend. Open the files, drag the slider, check my work.</p>
+      </div>
+
+      <!-- Project 1 -->
+      <article class="project" data-cell="B22" data-formula='=TCS_Model'>
+        <div class="project-head">
+          <span class="tag">Excel model · TCS annual report</span>
+          <h3 class="h3">Financial Analysis &amp; Forecasting Model</h3>
+          <p>A six-sheet Excel model covering eight years of TCS actuals (FY2018–FY2025), with Base, Bull and Bear forecasts through FY2028. Assumptions are linked, the forecast is overridable, and every total is checked.</p>
+          <p class="meta"><span class="filechip">TCS_Financial_Forecasting_Model.xlsx</span> 6 sheets / 11 checks</p>
+        </div>
+
+        <div class="chart-wrap">
+          <div class="chart-top">
+            <div class="chart-legend"><span class="lg lg--actual"></span>Actual <span class="lg lg--base"></span>Base <span class="lg lg--bull"></span>Bull <span class="lg lg--bear"></span>Bear</div>
+            <div class="scenario-pill">FY28 index <b id="fy28Index">265</b></div>
+          </div>
+          <div class="chart-surface">
+            <svg class="chart" id="revChart" viewBox="0 0 640 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Interactive TCS indexed revenue chart, FY2018 to FY2028. Choose Bear, Base or Bull to update the forecast.">
+              <g class="chart-grid"></g>
+              <g class="chart-paths"></g>
+              <g class="chart-points"></g>
+              <g class="chart-dot"></g>
+            </svg>
+            <div class="chart-tooltip" id="chartTooltip" role="status" aria-live="polite"></div>
+          </div>
+          <div class="chart-axis" id="chartAxis"></div>
+
+          <div class="scenario-control">
+            <span class="scenario-title">Choose a forecast scenario</span>
+            <div class="scenario-buttons" role="group" aria-label="Forecast scenario">
+              <button type="button" class="scenario-btn" data-scenario="bear" aria-pressed="false"><span>Bear</span><small>FY28 · 237</small></button>
+              <button type="button" class="scenario-btn is-active" data-scenario="base" aria-pressed="true"><span>Base</span><small>FY28 · 265</small></button>
+              <button type="button" class="scenario-btn" data-scenario="bull" aria-pressed="false"><span>Bull</span><small>FY28 · 299</small></button>
+            </div>
+            <div class="scenario-stats">
+              <div><span>FY28 revenue index</span><b id="fy28b">265</b></div>
+              <div><span>FY25 → FY28 CAGR</span><b id="cagr">8.5%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-foot">
+          <div class="kv-row">
+            <div class="kv"><span>Sheets</span><b>06 connected</b></div>
+            <div class="kv"><span>Checks</span><b>11 passing</b></div>
+            <div class="kv"><span>Actuals</span><b>FY18–FY25</b></div>
+            <div class="kv"><span>Forecast</span><b>FY26–FY28</b></div>
+          </div>
+          <div class="links">
+            <a class="btn btn--primary" href="/downloads/TCS_Financial_Forecasting_Model.xlsx">Download the Excel model</a>
+            <a class="btn" href="https://saitcsproject1.netlify.app/" target="_blank" rel="noopener">Open the project site ↗</a>
+            <a class="link" href="https://github.com/saiprasath00/tcs-financial-statements-dashboard" target="_blank" rel="noopener">View source ↗</a>
+          </div>
+          <details class="datatable">
+            <summary>View the chart data</summary>
+            <table>
+              <thead><tr><th>Index (FY18 = 100)</th><th>FY23</th><th>FY24</th><th>FY25</th><th>FY26B</th><th>FY27B</th><th>FY28B</th></tr></thead>
+              <tbody>
+                <tr><th>Revenue</th><td>168</td><td>187</td><td>207</td><td>226</td><td>246</td><td>265</td></tr>
+                <tr><th>EBITDA proxy</th><td>171</td><td>190</td><td>211</td><td>229</td><td>250</td><td>271</td></tr>
+                <tr><th>Adjusted PAT</th><td>155</td><td>174</td><td>189</td><td>208</td><td>228</td><td>248</td></tr>
+                <tr><th>Organic FCF</th><td>158</td><td>176</td><td>204</td><td>222</td><td>241</td><td>261</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </div>
+      </article>
+
+      <!-- Excel → Power BI transition -->
+      <div class="x2p" id="x2p">
+        <div class="x2p-row">
+          <span class="x2p-node x2p-excel"><span class="x2p-ic">▦</span><b>Excel</b><em>workbook</em></span>
+          <span class="x2p-track"><i class="x2p-fill"></i><i class="x2p-spark"></i></span>
+          <span class="x2p-node x2p-pbi"><span class="x2p-ic x2p-ic--pbi" aria-hidden="true"><i></i><i></i><i></i></span><b>Power BI</b><em>report</em></span>
+        </div>
+        <p class="x2p-cap">Same numbers. A different lens. <span>The workbook becomes a report.</span></p>
+      </div>
+
+      <!-- Project 2 -->
+      <article class="project project--pbi" data-cell="B40" data-formula='=TCS_Outlook_Dashboard'>
+        <div class="project-head">
+          <div class="pbi-brand">
+            <span class="pbi-logo" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Power BI · <b>TCS_Financial_Outlook.pbip</b></span>
+            <span class="pbi-live">Report</span>
+          </div>
+          <span class="tag tag--pbi">Power BI dashboard · TCS annual report</span>
+          <h3 class="h3">TCS Financial Outlook Dashboard</h3>
+          <p>A four-page Power BI Desktop scenario-analysis dashboard that turns TCS historical financial data into executive, trend, scenario-driver and financial-detail views.</p>
+          <p class="meta">Power Query M · Semantic model · DAX measures · <span class="filechip">TCS_Financial_Outlook.pbip</span> 4 pages</p>
+        </div>
+
+        <div class="pbi">
+          <div class="pbi-tabs" role="tablist">
+            <button class="pbi-tab on" data-page="exec" role="tab" aria-selected="true">01 Executive</button>
+            <button class="pbi-tab" data-page="trends" role="tab" aria-selected="false">02 Trends</button>
+            <button class="pbi-tab" data-page="scen" role="tab" aria-selected="false">03 Scenarios</button>
+            <button class="pbi-tab" data-page="detail" role="tab" aria-selected="false">04 Detail</button>
+          </div>
+
+          <div class="pbi-pane on" data-page="exec">
+            <div class="kpi-grid">
+              <div class="kpi"><span>Revenue · FY25A</span><b>₹2,55,324Cr</b><i class="up">+6.0% YoY</i></div>
+              <div class="kpi"><span>EBITDA proxy · FY25A</span><b>₹71,369Cr</b><i class="up">+3.9% YoY</i></div>
+              <div class="kpi"><span>Adjusted PAT · FY25A</span><b>₹48,797Cr</b><i class="up">+5.9% YoY</i></div>
+              <div class="kpi"><span>Organic FCF · FY25A</span><b>₹47,776Cr</b><i class="up">+5.6% YoY</i></div>
+            </div>
+            <div class="margins">
+              <div class="margin"><span>EBITDA proxy</span><b>27.9%</b><span class="bar"><i style="--lvl:27.9%"></i></span></div>
+              <div class="margin"><span>Adjusted PAT</span><b>19.1%</b><span class="bar"><i style="--lvl:19.1%"></i></span></div>
+              <div class="margin"><span>Organic FCF</span><b>18.7%</b><span class="bar"><i style="--lvl:18.7%"></i></span></div>
+            </div>
+            <p class="fineprint">All values in ₹ crore · FY25 actuals · EBITDA proxy = operating profit before depreciation.</p>
+          </div>
+
+          <div class="pbi-pane" data-page="trends">
+            <p class="pane-copy">Revenue grew from index 100 in FY18 to <b>207</b> in FY25; EBITDA reached <b>211</b>, adjusted PAT <b>189</b> and organic free cash flow <b>204</b>.</p>
+            <div class="trendbars">
+              <div class="tb"><span>Revenue</span><span class="bar"><i style="--lvl:100%"></i></span><b>100→207</b></div>
+              <div class="tb"><span>EBITDA</span><span class="bar"><i style="--lvl:96%"></i></span><b>100→211</b></div>
+              <div class="tb"><span>Adj. PAT</span><span class="bar"><i style="--lvl:84%"></i></span><b>100→189</b></div>
+              <div class="tb"><span>Organic FCF</span><span class="bar"><i style="--lvl:91%"></i></span><b>100→204</b></div>
+            </div>
+            <p class="fineprint">All metrics indexed to FY18 = 100 · FY18–FY25 actuals.</p>
+          </div>
+
+          <div class="pbi-pane" data-page="scen">
+            <p class="pane-copy">FY28 revenue index: Bear <b>237</b>, Base <b>265</b>, Bull <b>299</b> — that is 4.5%, 8.5% and 13.0% CAGR from FY25.</p>
+            <div class="scenario-bars">
+              <div class="sb"><span>Bear</span><span class="bar"><i style="--lvl:79%"></i></span><b>237</b></div>
+              <div class="sb"><span>Base</span><span class="bar"><i style="--lvl:88%"></i></span><b>265</b></div>
+              <div class="sb"><span>Bull</span><span class="bar"><i style="--lvl:100%"></i></span><b>299</b></div>
+            </div>
+            <p class="fineprint">Three paths from the same FY25 actual · illustrative scenario logic, not TCS guidance.</p>
+          </div>
+
+          <div class="pbi-pane" data-page="detail">
+            <table class="fin">
+              <thead><tr><th>₹ Cr</th><th>FY23</th><th>FY24</th><th>FY25</th><th>FY26B</th></tr></thead>
+              <tbody>
+                <tr><th>Revenue</th><td>2,25,458</td><td>2,40,893</td><td>2,55,324</td><td>2,75,750</td></tr>
+                <tr><th>EBITDA</th><td>62,708</td><td>68,718</td><td>71,369</td><td>77,210</td></tr>
+                <tr><th>PAT</th><td>42,303</td><td>46,099</td><td>48,797</td><td>53,207</td></tr>
+                <tr><th>FCF</th><td>40,997</td><td>45,227</td><td>47,776</td><td>52,104</td></tr>
+              </tbody>
+            </table>
+            <p class="fineprint">FY26B = Base case · values in ₹ crore · source: TCS annual reports and model.</p>
+          </div>
+        </div>
+
+        <div class="project-foot">
+          <div class="kv-row">
+            <div class="kv"><span>Pages</span><b>04</b></div>
+            <div class="kv"><span>Data</span><b>FY18–FY26</b></div>
+            <div class="kv"><span>Built with</span><b>Power Query M</b></div>
+            <div class="kv"><span>Measures</span><b>DAX</b></div>
+          </div>
+          <div class="links">
+            <a class="btn btn--primary" href="/downloads/TCS_Financial_Outlook_Dashboard_PBIP.zip">Download the PBIP source</a>
+            <a class="link" href="https://github.com/saiprasath00/tcs-financial-statements-dashboard" target="_blank" rel="noopener">View source ↗</a>
+          </div>
+          <p class="fineprint">Set the local WorkbookPath before the first refresh. FY2027–FY2028 figures are sensitivity cases, not TCS guidance or consensus.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========== TOOLKIT ========== -->
+    <section class="block block--toolkit pbi-zone" id="toolkit" data-sheet="toolkit" data-cell="F4" data-formula='=UNIQUE(Toolkit[Group])'>
+      <div class="section-head">
+        <h2 class="h2">Two sides of my desk.</h2>
+        <p class="lead">Finance on one side, data on the other. These are the tools I reach for, and what I use them for.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="toolcol">
+          <h3 class="h3"><span class="colref">A</span> Data &amp; Business Intelligence</h3>
+          <ul class="skill-list">
+            <li><span>Microsoft Excel</span><span class="bar"><i style="--lvl:94%"></i></span></li>
+            <li><span>Power BI</span><span class="bar"><i style="--lvl:84%"></i></span></li>
+            <li><span>Data cleaning</span><span class="bar"><i style="--lvl:88%"></i></span></li>
+            <li><span>Data transformation</span><span class="bar"><i style="--lvl:82%"></i></span></li>
+            <li><span>Data visualization</span><span class="bar"><i style="--lvl:86%"></i></span></li>
+            <li><span>MIS reporting</span><span class="bar"><i style="--lvl:83%"></i></span></li>
+            <li><span>KPI reporting</span><span class="bar"><i style="--lvl:85%"></i></span></li>
+            <li><span>Dashboard development</span><span class="bar"><i style="--lvl:81%"></i></span></li>
+          </ul>
+          <p class="fineprint">Excel: PivotTables, VLOOKUP, XLOOKUP, INDEX-MATCH, Power Query, Macros &amp; VBA. Power BI: data modelling and DAX.</p>
+        </article>
+
+        <article class="toolcol">
+          <h3 class="h3"><span class="colref">B</span> Finance &amp; Accounting</h3>
+          <ul class="skill-list">
+            <li><span>Financial analysis</span><span class="bar"><i style="--lvl:88%"></i></span></li>
+            <li><span>Financial modeling</span><span class="bar"><i style="--lvl:85%"></i></span></li>
+            <li><span>Accounting</span><span class="bar"><i style="--lvl:86%"></i></span></li>
+            <li><span>Tally Prime</span><span class="bar"><i style="--lvl:78%"></i></span></li>
+            <li><span>Capital budgeting</span><span class="bar"><i style="--lvl:80%"></i></span></li>
+            <li><span>Auditing</span><span class="bar"><i style="--lvl:75%"></i></span></li>
+            <li><span>Statement analysis</span><span class="bar"><i style="--lvl:87%"></i></span></li>
+            <li><span>Journal &amp; ledger</span><span class="bar"><i style="--lvl:82%"></i></span></li>
+          </ul>
+          <p class="fineprint">A commerce foundation applied to financial statements, scenario modelling and reporting.</p>
+        </article>
+      </div>
+
+      <div class="learning">
+        <span class="learning-k">Currently learning</span>
+        <span class="learning-v">SQL + Python</span>
+        <p>Building practical skills for business reporting: querying, scripting and automating the boring parts.</p>
+      </div>
+    </section>
+
+    <!-- ========== JOURNEY ========== -->
+    <section class="block block--journey pbi-zone" id="journey" data-sheet="journey" data-cell="D4" data-formula='=SORT(Education[Year],1)'>
+      <div class="section-head">
+        <h2 class="h2">How I got here.</h2>
+        <p class="lead">A commerce degree, an Excel course, and a stack of Coursera certificates I actually finished.</p>
+      </div>
+
+      <div class="roadmap">
+        <div class="rm-summary">
+          <div class="rm-sum"><span>Started</span><b>2016</b></div>
+          <div class="rm-arrow" aria-hidden="true">→</div>
+          <div class="rm-sum"><span>Now</span><b>2026 · Open to work</b></div>
+          <div class="rm-meter">
+            <span>B.Com · CGPA 9.05 · 15 certificates</span>
+            <div class="bar"><i style="--lvl:100%"></i></div>
+          </div>
+        </div>
+
+        <div class="rm-wrap">
+          <i class="rm-rail" aria-hidden="true"><b id="rmFill"></b></i>
+          <ol class="rm-list">
+            <li class="rm-item">
+              <span class="rm-node"></span>
+              <span class="rm-year">2016 – 2019</span>
+              <div class="rm-card">
+                <span class="rm-kicker">Milestone 01</span>
+                <h3>SSLC</h3>
+                <p>Sacred Heart Boys' High School · Bengaluru</p>
+                <span class="chip">Score 69.76%</span><span class="chip ok">Completed</span>
+              </div>
+            </li>
+            <li class="rm-item">
+              <span class="rm-node"></span>
+              <span class="rm-year">2021 – 2023</span>
+              <div class="rm-card">
+                <span class="rm-kicker">Milestone 02</span>
+                <h3>Pre-University (Commerce – SCBA)</h3>
+                <p>Dr. Ambedkar PU College · Bengaluru</p>
+                <span class="chip">Score 90.50%</span><span class="chip ok">Completed</span>
+              </div>
+            </li>
+            <li class="rm-item">
+              <span class="rm-node"></span>
+              <span class="rm-year">2023 – 2026</span>
+              <div class="rm-card">
+                <span class="rm-kicker">Milestone 03</span>
+                <h3>Bachelor of Commerce (B.Com)</h3>
+                <p>Charan's Degree College · Bengaluru City University</p>
+                <span class="chip">CGPA 9.05</span><span class="chip ok">Completed</span>
+              </div>
+            </li>
+            <li class="rm-item">
+              <span class="rm-node"></span>
+              <span class="rm-year">Feb – Apr 2026</span>
+              <div class="rm-card">
+                <span class="rm-kicker">Milestone 04</span>
+                <h3>Intensive Excel Training Program</h3>
+                <p>Structured Skill Development · Bengaluru</p>
+                <p class="muted">IF, SUMIF, COUNTIF, VLOOKUP, XLOOKUP and INDEX-MATCH, plus Power Query automation and PivotTable reporting.</p>
+              </div>
+            </li>
+            <li class="rm-item rm-item--now">
+              <span class="rm-node rm-node--now"></span>
+              <span class="rm-year">Now · 2026</span>
+              <div class="rm-card rm-card--now">
+                <span class="rm-kicker">You are here</span>
+                <h3>Looking for my first role</h3>
+                <p>Business reporting, analytics, finance analytics or MIS. Currently learning SQL + Python.</p>
+                <span class="chip ok">Open to work</span><span class="chip">Learning SQL + Python</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="certs">
+        <div class="certs-head">
+          <h3 class="h3">Courses &amp; certifications</h3>
+          <span class="chip chip--count"><b class="num" data-count="15">15</b> certificates</span>
+        </div>
+        <div class="cert-grid">
+          <details class="cert cert-group">
+            <summary><span><b>Google Data Analytics</b><small>Google · Coursera · 4 completed courses</small></span><i>View courses</i></summary>
+            <div class="cert-courses">
+              <article class="course-row"><div><h4>Process Data from Dirty to Clean</h4><p>Completed 3 November 2026</p></div><strong>87.84%</strong><a href="https://www.coursera.org/account/accomplishments/verify/GBZCH5TJS7IV" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Prepare Data for Exploration</h4><p>Completed 17 April 2026</p></div><strong>94.21%</strong><a href="https://www.coursera.org/account/accomplishments/verify/Q40W8D5TMQPV" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Ask Questions to Make Data-Driven Decisions</h4><p>Completed 4 April 2026</p></div><strong>90.10%</strong><a href="https://www.coursera.org/account/accomplishments/verify/IWFNB2F87SDY" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Foundations: Data, Data, Everywhere</h4><p>Completed 31 March 2026</p></div><strong>90.50%</strong><a href="https://www.coursera.org/account/accomplishments/verify/N8LXGJZF4NA6" target="_blank" rel="noopener">View certificate ↗</a></article>
+            </div>
+          </details>
+          <details class="cert cert-group">
+            <summary><span><b>Microsoft Power BI Data Analyst</b><small>Microsoft · Coursera · 3 completed courses</small></span><i>View courses</i></summary>
+            <div class="cert-courses">
+              <article class="course-row"><div><h4>Data Modeling in Power BI</h4><p>Completed 20 March 2026</p></div><strong>88%</strong><a href="https://www.coursera.org/account/accomplishments/verify/U2Q232SITPRB" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Extract, Transform and Load Data in Power BI</h4><p>Completed 2 March 2026</p></div><strong>87.94%</strong><a href="https://www.coursera.org/account/accomplishments/verify/7C3MQ2RTY6ZS" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Harnessing the Power of Data with Power BI</h4><p>Completed 24 February 2026</p></div><strong>89.37%</strong><a href="https://www.coursera.org/account/accomplishments/verify/Y220KCWQT7J6" target="_blank" rel="noopener">View certificate ↗</a></article>
+            </div>
+          </details>
+          <details class="cert cert-group">
+            <summary><span><b>Microsoft Excel &amp; Advanced Analytics</b><small>Microsoft, EDUCBA &amp; Coursera · 4 completed courses</small></span><i>View courses</i></summary>
+            <div class="cert-courses">
+              <article class="course-row"><div><h4>Master Excel Advanced Functions and Analytics</h4><p>Completed 9 March 2026</p></div><strong>100%</strong><a href="https://www.coursera.org/account/accomplishments/verify/Y6OBQ5YDS1EZ" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Master Microsoft Excel: Apply, Analyze &amp; Visualize Data</h4><p>Completed 2 March 2026</p></div><strong>92.50%</strong><a href="https://www.coursera.org/account/accomplishments/verify/64ZW831QVSSQ" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Preparing Data for Analysis with Microsoft Excel</h4><p>Completed 18 February 2026</p></div><strong>91.33%</strong><a href="https://www.coursera.org/account/accomplishments/verify/HP9JGZWEJKIQ" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>Getting Started with Microsoft Excel</h4><p>Completed 3 May 2025</p></div><strong>96.42%</strong><a href="https://www.coursera.org/account/accomplishments/verify/Y9C5J7U0SF09" target="_blank" rel="noopener">View certificate ↗</a></article>
+            </div>
+          </details>
+          <details class="cert cert-group">
+            <summary><span><b>AI at Work &amp; Responsible AI</b><small>Alex Genadinik · Coursera · 3 completed courses</small></span><i>View courses</i></summary>
+            <div class="cert-courses">
+              <article class="course-row"><div><h4>2026 Fixing AI Errors &amp; Hallucinations, And Fact-Checking</h4><p>Completed 27 March 2026</p></div><strong>93.33%</strong><a href="https://www.coursera.org/account/accomplishments/verify/BMPIHHXBEAQO" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>AI Ethics</h4><p>Completed 26 March 2026</p></div><strong>100%</strong><a href="https://www.coursera.org/account/accomplishments/verify/6SZRBS41VRYP" target="_blank" rel="noopener">View certificate ↗</a></article>
+              <article class="course-row"><div><h4>2026 AI And ChatGPT At Work: Productive AI Use For Beginners</h4><p>Completed 25 March 2026</p></div><strong>95%</strong><a href="https://www.coursera.org/account/accomplishments/verify/YQKVIVV0GKPL" target="_blank" rel="noopener">View certificate ↗</a></article>
+            </div>
+          </details>
+          <details class="cert cert-group">
+            <summary><span><b>Fundamentals of Accounting and Reporting</b><small>Tally Education · Coursera · 1 completed course</small></span><i>View course</i></summary>
+            <div class="cert-courses">
+              <article class="course-row"><div><h4>Fundamentals of Accounting and Reporting</h4><p>Completed 22 March 2026</p></div><strong>93.68%</strong><a href="https://www.coursera.org/account/accomplishments/verify/AXY75RG07822" target="_blank" rel="noopener">View certificate ↗</a></article>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="langs">
+        <h3 class="h3">Languages</h3>
+        <div class="lang-grid">
+          <div class="lang"><span>English</span><span class="bar"><i style="--lvl:90%"></i></span><b>Proficient</b></div>
+          <div class="lang"><span>Tamil</span><span class="bar"><i style="--lvl:100%"></i></span><b>Native</b></div>
+          <div class="lang"><span>Kannada</span><span class="bar"><i style="--lvl:88%"></i></span><b>Proficient</b></div>
+          <div class="lang"><span>Hindi</span><span class="bar"><i style="--lvl:70%"></i></span><b>Conversational</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="block block--contact pbi-zone" id="contact" data-sheet="contact" data-cell="B4" data-formula='=HYPERLINK("mailto:saiprasathdp@gmail.com","Say hello")'>
+      <div class="contact-wrap">
+        <div class="contact-main">
+          <h2 class="display display--sm">I'm looking for a team.</h2>
+          <p class="lead">Entry-level roles in business reporting, analytics, finance analytics or MIS. Bengaluru or remote. If you have a role, a dataset, or a second opinion on a model, my inbox is open.</p>
+          <div class="contact-actions">
+            <a class="btn btn--primary btn--lg" href="mailto:saiprasathdp@gmail.com">saiprasathdp@gmail.com</a>
+            <button class="btn" id="copyEmail" data-email="saiprasathdp@gmail.com">Copy email</button>
+          </div>
+        </div>
+
+        <div class="contact-cards">
+          <a class="ccard" href="tel:+919380721853"><span>Phone</span><b>+91 93807 21853</b></a>
+          <a class="ccard" href="https://www.linkedin.com/in/sai-prasath-d-p-692753361" target="_blank" rel="noopener"><span>LinkedIn</span><b>Sai Prasath D P ↗</b></a>
+          <a class="ccard" href="/downloads/Sai_Prasath_DP_Resume_Professional.pdf"><span>Résumé</span><b>Professional PDF ↓</b></a>
+          <a class="ccard" href="/downloads/Sai_Prasath_Resume_Pack.zip"><span>Resume pack</span><b>ZIP ↓</b></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="endmark">
+      <span class="endmark-cell">A1</span>
+      <p>© 2026 Sai Prasath D P · Designed and built by Sai · Bengaluru, India · No cookies. No tracking.</p>
+    </div>
+
+    <!-- floating cursor + selection overlay -->
+    <div class="cursorcell" id="cursorcell" aria-hidden="true"></div>
+    <div class="selcell" id="selcell" aria-hidden="true"></div>
+  </main>
+</div>
+
+<!-- ============ SHEET TABS + STATUS BAR ============ -->
+<footer class="tabbar">
+  <div class="tabs" role="tablist" aria-label="Sheets">
+    <button class="tab on" data-jump="about" role="tab" aria-selected="true">About</button>
+    <button class="tab" data-jump="work" role="tab" aria-selected="false">Work</button>
+    <button class="tab" data-jump="toolkit" role="tab" aria-selected="false">Toolkit</button>
+    <button class="tab" data-jump="journey" role="tab" aria-selected="false">Journey</button>
+    <button class="tab" data-jump="contact" role="tab" aria-selected="false">Contact</button>
+    <button class="tab tab--add" aria-hidden="true">＋</button>
+  </div>
+  <div class="statusbar">
+    <span class="st-ready">Ready</span>
+    <span class="st-sep"></span>
+    <span class="st-live">Recalculating · <b id="recalc">100%</b></span>
+    <span class="st-sep"></span>
+    <span class="st-zoom">− <b>100%</b> +</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="script.js" defer></script>
+<script src="enhance.js" defer></script>
+</body>
+</html>
